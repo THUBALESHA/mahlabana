@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thubalesha Driving School & Licensing Services</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+}
+
+header{
+background:#0a2f6b;
+color:white;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ffc107;
+}
+
+.hero{
+height:90vh;
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1503376780353-7e6692767b70');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.btn{
+background:#ffc107;
+color:#000;
+padding:15px 35px;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+display:inline-block;
+transition:.3s;
+}
+
+.btn:hover{
+background:white;
+}
+
+.gif-section{
+padding:50px 20px;
+text-align:center;
+background:white;
+}
+
+.gif-section img{
+width:100%;
+max-width:700px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.services{
+padding:80px 8%;
+text-align:center;
+}
+
+.services h2{
+font-size:40px;
+color:#0a2f6b;
+margin-bottom:50px;
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card i{
+font-size:50px;
+color:#0a2f6b;
+margin-bottom:20px;
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.about{
+padding:80px 8%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+background:#ffffff;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+}
+
+.about-text h2{
+color:#0a2f6b;
+margin-bottom:20px;
+font-size:40px;
+}
+
+.stats{
+background:#0a2f6b;
+color:white;
+padding:70px 8%;
+}
+
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.stats h3{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.cta{
+padding:80px 20px;
+text-align:center;
+background:#eaf1ff;
+}
+
+.cta h2{
+font-size:40px;
+margin-bottom:20px;
+color:#0a2f6b;
+}
+
+footer{
+background:#0a2f6b;
+color:white;
+padding:40px 8%;
+text-align:center;
+}
+
+footer p{
+margin:10px 0;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:35px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">🚗 MAHLABANA Driving School</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Pricing</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Learn To Drive With Confidence</h1>
+<p>Driving Lessons • License Renewals • Vehicle Registration • PrDP Services</p>
+<a href="booknow.html" class="btn">Book Now</a>
+</div>
+</section>
+
+<section class="gif-section">
+<h2 style="color:#0a2f6b;margin-bottom:20px;">
+Your Road To Success Starts Here
+</h2>
+
+<img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif"
+alt="Driving Animation">
+</section>
+
+<section class="services">
+
+<h2>Our Services</h2>
+
+<div class="service-grid">
+
+<div class="card">
+<i class="fas fa-car"></i>
+<h3>Driving Lessons</h3>
+<p>Professional driving lessons for beginners and experienced drivers.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-id-card"></i>
+<h3>License Renewals</h3>
+<p>Quick and hassle-free renewal of personal driving licenses.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-file-alt"></i>
+<h3>Vehicle Registration</h3>
+<p>Renew vehicle licenses and registration documents with ease.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-bus"></i>
+<h3>PrDP Services</h3>
+<p>Professional Driving Permit applications and renewals.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-book"></i>
+<h3>Learner's License</h3>
+<p>Training and support to help you pass your learner's test.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-handshake"></i>
+<h3>Government Assistance</h3>
+<p>Support with various transport and licensing services.</p>
+</div>
+
+</div>
+</section>
+
+<section class="about">
+
+<img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d"
+alt="Driving School">
+
+<div class="about-text">
+<h2>About Us</h2>
+
+<p>
+mahlabana Driving School & Licensing Services provides professional
+driver training and licensing support across South Africa.
+We help clients obtain driving licenses, renew vehicle registrations,
+renew personal licenses and access transport-related services quickly
+and efficiently.
+</p>
+
+<br>
+
+<a href="#" class="btn">Learn More</a>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="stats-grid">
+
+<div>
+<h3>500+</h3>
+<p>Happy Students</p>
+</div>
+
+<div>
+<h3>95%</h3>
+<p>Pass Rate</p>
+</div>
+
+<div>
+<h3>1000+</h3>
+<p>Renewals Processed</p>
+</div>
+
+<div>
+<h3>24/7</h3>
+<p>Customer Support</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>Ready To Get On The Road?</h2>
+
+<p style="margin-bottom:30px;">
+Contact us today for driving lessons, vehicle registration renewals and licensing services.
+</p>
+
+<a href="tel:0787102337" class="btn">
+Call Now
+</a>
+
+</section>
+
+<footer>
+
+<h3>mahlabana Driving School & Licensing Services</h3>
+
+<p>📞 071 846 5085 | 016 989 1002</p>
+
+<p>📧 mahlabana.gen@gmail.com</p>
+
+<p>&copy; 2026 All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
