@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Service | Thubalesha Driving School</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fa;
+}
+
+.booking-section{
+padding:80px 20px;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+.booking-container{
+background:#fff;
+width:100%;
+max-width:900px;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.booking-title{
+text-align:center;
+margin-bottom:30px;
+}
+
+.booking-title h1{
+color:#0a2f6b;
+margin-bottom:10px;
+}
+
+.booking-title p{
+color:#666;
+}
+
+.form-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.form-group{
+display:flex;
+flex-direction:column;
+}
+
+.form-group label{
+margin-bottom:8px;
+font-weight:bold;
+color:#333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+padding:14px;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:15px;
+}
+
+.form-group textarea{
+resize:vertical;
+height:120px;
+}
+
+.full-width{
+grid-column:1 / -1;
+}
+
+.submit-btn{
+width:100%;
+padding:15px;
+background:#0a2f6b;
+color:white;
+border:none;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.submit-btn:hover{
+background:#061f49;
+}
+
+.contact-box{
+margin-top:30px;
+padding:20px;
+background:#eef4ff;
+border-radius:12px;
+text-align:center;
+}
+
+.contact-box i{
+color:#0a2f6b;
+margin-right:8px;
+}
+
+.success-message{
+display:none;
+background:#d4edda;
+color:#155724;
+padding:15px;
+border-radius:10px;
+margin-bottom:20px;
+text-align:center;
+}
+
+@media(max-width:768px){
+
+.form-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<section class="booking-section">
+
+<div class="booking-container">
+
+<div class="booking-title">
+<h1>Book a Service</h1>
+<p>Schedule driving lessons, license renewals, vehicle registration services and more.</p>
+</div>
+
+<div id="successMessage" class="success-message">
+Your booking request has been submitted successfully.
+</div>
+
+<form id="bookingForm">
+
+<div class="form-grid">
+
+<div class="form-group">
+<label>Full Name</label>
+<input type="text" required>
+</div>
+
+<div class="form-group">
+<label>Phone Number</label>
+<input type="tel" required>
+</div>
+
+<div class="form-group">
+<label>Email Address</label>
+<input type="email">
+</div>
+
+<div class="form-group">
+<label>Select Service</label>
+<select required>
+<option value="">Choose Service</option>
+<option>Driving Lessons</option>
+<option>Learner's License Assistance</option>
+<option>Driver's License Renewal</option>
+<option>Vehicle Registration Renewal</option>
+<option>PrDP Application</option>
+<option>PrDP Renewal</option>
+<option>Vehicle Change of Ownership</option>
+<option>Traffic Fine Assistance</option>
+<option>Other Services</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Preferred Date</label>
+<input type="date" required>
+</div>
+
+<div class="form-group">
+<label>Preferred Time</label>
+<input type="time" required>
+</div>
+
+<div class="form-group full-width">
+<label>Additional Notes</label>
+<textarea placeholder="Tell us more about your request..."></textarea>
+</div>
+
+<div class="form-group full-width">
+<button type="submit" class="submit-btn">
+<i class="fas fa-calendar-check"></i>
+ Submit Booking
+</button>
+</div>
+
+</div>
+
+</form>
+
+<div class="contact-box">
+<p><i class="fas fa-phone"></i> 078 710 2337 | 016 989 1002</p>
+<p><i class="fas fa-envelope"></i> thubalesha.gen@gmail.com</p>
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+document.getElementById("bookingForm").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+document.getElementById("successMessage").style.display = "block";
+
+this.reset();
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+});
+
+</script>
+
+</body>
+</html>
